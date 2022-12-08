@@ -17,5 +17,5 @@ foreach (int pack in caloriePacks)
 {
     Console.WriteLine($"Index: {caloriePacks.IndexOf(pack)}, Calories: {pack}");
 }
-Console.WriteLine($"The elf with the most calories is elf number [{caloriePacks.IndexOf(caloriePacks.Max())-1}] with [{caloriePacks.Max()}] calories.");
+Console.WriteLine($"The elf with the most calories is elf number [{caloriePacks.IndexOf(caloriePacks.Max())+1}] with [{caloriePacks.Max()}] calories.");
 Console.WriteLine("Did I do good Michael?");
