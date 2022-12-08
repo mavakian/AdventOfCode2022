@@ -17,11 +17,9 @@ foreach (int pack in caloriePacks)
 {
     Console.WriteLine($"Index: {caloriePacks.IndexOf(pack)}, Calories: {pack}");
 }
-
-
 Console.WriteLine($"The elf with the most calories is elf number [{caloriePacks.IndexOf(caloriePacks.Max())+1}] with [{caloriePacks.Max()}] calories.");
 
-//Part2
+// Part 2
 caloriePacks.Sort();
 caloriePacks.Reverse();
 Console.WriteLine($"The most prepared elfs for the journey have packs with the following calories:");
@@ -31,7 +29,5 @@ foreach(var caloriePack in caloriePacks.Take(3))
     Console.WriteLine(caloriePack);
     total += caloriePack;
 }
-
-Console.WriteLine($"The Top Three elves have a total of [{total}] calories packed.");
-Console.WriteLine("Did I do good Michael?");
+Console.WriteLine($"The top three elves have a total of [{total}] calories packed.");
 Console.ReadLine();
